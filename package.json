@@ -1,4 +1,5 @@
 {
+  "type": "module", 
   "devDependencies": {
     "@faker-js/faker": "^9.7.0",
     "@wdio/allure-reporter": "^9.12.6",
@@ -20,6 +21,6 @@
   "author": "Anastasia, github - anavoro",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/your-repository.git"
+    "url": "https://github.com/anavoro/browserstack_test.git"
   }
 }
