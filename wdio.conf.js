@@ -21,7 +21,7 @@ export const config = {
       'browserstack.networkLogs': true,
     'browserstack.env.VALID_USER_EMAIL': 'mimi@example.com',
     'browserstack.env.VALID_USER_PASSWORD': 'kiki2025'
-    },/*
+    },
     {
       project: "First Webdriverio Android Project",
       build: 'Webdriverio Android',
@@ -33,7 +33,7 @@ export const config = {
       'browserstack.networkLogs': true,
       'browserstack.env.VALID_USER_EMAIL': 'mimi@example.com',
       'browserstack.env.VALID_USER_PASSWORD': 'kiki2025'
-    } */
+    } 
   ],
   reporters: [
     'spec',
