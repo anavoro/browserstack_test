@@ -68,13 +68,5 @@ class DragPage extends HomePage {
     await button.click();
     await browser.pause(500); 
   }
-
-  async isL2InDropL2() {
-    return await this.dropL2Target.$('*[content-desc="drag-l2"]').isExisting();
-  }
-
-  async isC1InDropC1() {
-    return await this.dropC1Target.$('*[content-desc="drag-c1"]').isExisting();
-  }
 }
 export default DragPage;
