@@ -16,11 +16,11 @@ export const config = {
       name: 'appium',
       device: 'Google Pixel 3',
       os_version: "9.0",
-      app: process.env.BROWSERSTACK_APP_ID || 'bs://23c511db2a176dd044a708bbe0549c5a6c38c5c6',
+      app: process.env.BROWSERSTACK_APP_ID || 'bs://4cb071a668df3d2017e2dc9191b78f839e465d5d',
       'browserstack.debug': true,
       'browserstack.networkLogs': true,
-    'browserstack.env.VALID_USER_EMAIL': 'mimi@example.com',
-    'browserstack.env.VALID_USER_PASSWORD': 'kiki2025'
+      'browserstack.env.VALID_USER_EMAIL': process.env.VALID_USER_EMAIL,
+      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD
     },
     {
       project: "First Webdriverio Android Project",
@@ -28,11 +28,11 @@ export const config = {
       name: 'appium-second-device',
       device: 'Samsung Galaxy S10',
       os_version: "9.0",
-      app: process.env.BROWSERSTACK_APP_ID || 'bs://23c511db2a176dd044a708bbe0549c5a6c38c5c6',
+      app: process.env.BROWSERSTACK_APP_ID || 'bs://4cb071a668df3d2017e2dc9191b78f839e465d5d',
       'browserstack.debug': true,
       'browserstack.networkLogs': true,
-      'browserstack.env.VALID_USER_EMAIL': 'mimi@example.com',
-      'browserstack.env.VALID_USER_PASSWORD': 'kiki2025'
+      'browserstack.env.VALID_USER_EMAIL': process.env.VALID_USER_EMAIL,
+      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD
     } 
   ],
   reporters: [

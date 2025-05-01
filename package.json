@@ -14,7 +14,7 @@
   },
   "scripts": {
     "wdio": "wdio run ./wdio.conf.js",
-    "allure:report": "npx allure generate allure-results --clean && npx allure open"
+    "allure:report": "npx allure generate allure-results --clean && npx allure open --no-browser"
   },
   "name": "mobile-testing-project",
   "description": "A mobile testing project using WebdriverIO, Appium, and BrowserStack for automated testing.",

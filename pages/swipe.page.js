@@ -57,12 +57,10 @@ class SwipePage extends HomePage {
 
   async getCardTextByIndex(index) {
     const card = await $(`(//android.view.ViewGroup[@content-desc="card"])[${index}]`);
-    const slideTextContainer = await card.$('[content-desc="slideTextContainer"]');
-    await slideTextContainer.waitForDisplayed({ timeout: 5000 });
-    const textViews = await slideTextContainer.$$('android.widget.TextView');
-    for (const textView of textViews) {
-      const text = await textView.getText();
-      if (text && text !== "󰘑" && text !== "󰊤") {
+    const titleTextView = await card.$('//android.view.ViewGroup[@content-desc="slideTextContainer"]/android.widget.TextView[1]');
+    if (await titleTextView.isExisting()) {
+      const text = await titleTextView.getText();
+      if (text && text !== "󰘑" && text !== "󰊤" && text !== "󰗃") {
         return text;
       }
     }

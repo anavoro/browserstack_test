@@ -27,18 +27,16 @@ describe('Swipe Test - Specific Content Verification', () => {
   });
   
   it('should swipe left and display the next expected content', async () => {
-    await driver.pause(1000);
     await swipePage.swipeToNextCard();
-    await driver.pause(2000); 
+    await driver.pause(1000); 
     const newCenterText = await swipePage.getCenterCardText();
     expect(newCenterText).toEqual("GREAT COMMUNITY"); 
   });
 
   it('should swipe right and display the previous expected content', async () => {
-    await driver.pause(1000);
     await swipePage.swipeToPreviousCard();
-    await driver.pause(2000); 
-    const newCenterText = await swipePage.getCenterCardText();
+    await driver.pause(1000);
+    const newCenterText = await swipePage.getCardTextByIndex(1); 
     expect(newCenterText).toEqual("FULLY OPEN SOURCE");
   });
 
@@ -48,7 +46,7 @@ describe('Swipe Test - Specific Content Verification', () => {
 
     for (let i = 0; i < numberOfSwipes; i++) {
       await swipePage.swipeToNextCard();
-      await driver.pause(2000);
+      await driver.pause(1000);
     }
 
     const lastCenterCardText = await swipePage.getCenterCardText();
