@@ -20,8 +20,9 @@ export const config = {
       'browserstack.debug': true,
       'browserstack.networkLogs': true,
       'browserstack.env.VALID_USER_EMAIL': process.env.VALID_USER_EMAIL,
-      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD
-    },
+      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD,
+      maxInstances: 1
+    }, 
     {
       project: "First Webdriverio Android Project",
       build: 'Webdriverio Android',
@@ -32,7 +33,8 @@ export const config = {
       'browserstack.debug': true,
       'browserstack.networkLogs': true,
       'browserstack.env.VALID_USER_EMAIL': process.env.VALID_USER_EMAIL,
-      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD
+      'browserstack.env.VALID_USER_PASSWORD': process.env.VALID_USER_PASSWORD,
+      maxInstances: 1
     } 
   ],
   reporters: [
